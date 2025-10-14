@@ -14,7 +14,7 @@ function renderProducts(list) {
   list.forEach(product => {
     let card = $(`
       <div class="bg-white shadow-md rounded-lg p-4 text-center hover:shadow-xl transition cursor-pointer">
-        <img src="http://localhost/RevvedupPos/static/upload/${product.prod_img}" 
+        <img src="http://maroon-salmon-407117.hostingersite.com/static/upload/${product.prod_img}" 
              alt="${product.prod_name}" 
              class="mx-auto mb-4 h-40 object-contain">
         <h3 class="text-gray-700 font-medium">${product.prod_name}</h3>
@@ -25,7 +25,7 @@ function renderProducts(list) {
 
     // Click event to show modal
     card.on("click", function() {
-      $("#modalImage").attr("src", `http://localhost/RevvedupPos/static/upload/${product.prod_img}`);
+      $("#modalImage").attr("src", `http://maroon-salmon-407117.hostingersite.com/static/upload/${product.prod_img}`);
       $("#modalName").text(product.prod_name);
       $("#modalPrice").text(`Php. ${product.prod_price}`);
       $("#modalStock").text(`Stock: ${product.prod_qty}`);
@@ -96,7 +96,7 @@ function renderCategories() {
 $(document).ready(function () {
   // Fetch products
   $.ajax({
-    url: "http://localhost/RevvedupPos/controller/end-points/controller.php?requestType=fetch_all_product",
+    url: "http://maroon-salmon-407117.hostingersite.com/controller/end-points/controller.php?requestType=fetch_all_product",
     method: "GET",
     dataType: "json",
     success: function (response) {
