@@ -4,6 +4,7 @@
         <!-- Logo -->
         <div class="text-white font-bold text-2xl">
             <a href="../" class="hover:text-red-300">RevvedUp</a>
+            <h1 class="text-4xl text-blue-600 font-bold">Tailwind is working!</h1>
         </div>
 
         <!-- Sign In / Register -->
