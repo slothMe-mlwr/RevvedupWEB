@@ -30,7 +30,7 @@ $(document).ready(function(){
   // Fetch Employees from API
   function fetchEmployees(){
     $.ajax({
-      url: "http://localhost/RevvedupPos/controller/end-points/controller.php?requestType=fetch_all_users",
+      url: "https://maroon-salmon-407117.hostingersite.com/controller/end-points/controller.php?requestType=fetch_all_users",
       method: "GET",
       dataType: "json",
       success: function(response){
